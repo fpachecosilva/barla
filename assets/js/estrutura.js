@@ -43,7 +43,7 @@ function closeLeite() {
 let navLinks = document.querySelectorAll('nav a');
 
 function openMenu() {
-  if (window.innerWidth < 769) {
+  if (window.innerWidth < 1100) {
     let body = document.querySelector('body');
     let header = document.querySelector('header');  
     header.classList.add('open');
@@ -52,7 +52,7 @@ function openMenu() {
 }
 
 function closeMenu() {
-  if (window.innerWidth < 769) {
+  if (window.innerWidth < 1100) {
     let body = document.querySelector('body');
     let header = document.querySelector('header');	
     header.classList.remove('open');
@@ -115,7 +115,7 @@ window.addEventListener('scroll', function() {
   var scrollPosition = window.scrollY;
   var screenWidth = window.innerWidth;
 
-  if (screenWidth < 769) {
+  if (screenWidth < 1100) {
       if (scrollPosition > 50) {
           logo.classList.add('intop');
       } else {
